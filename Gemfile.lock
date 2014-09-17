@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     cocoapods-coverage (0.0.2)
-      cocoapods-testing
+      cocoapods-testing (>= 0.0.4)
       slather
 
 GEM
@@ -13,7 +13,7 @@ GEM
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
     clamp (0.6.3)
-    cocoapods-testing (0.0.3)
+    cocoapods-testing (0.0.4)
       xctasks
     colored (1.2)
     i18n (0.6.11)
