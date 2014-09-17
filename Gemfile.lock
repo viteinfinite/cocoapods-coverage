@@ -1,0 +1,42 @@
+PATH
+  remote: .
+  specs:
+    cocoapods-coverage (0.0.2)
+      cocoapods-testing
+      slather
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    CFPropertyList (2.2.8)
+    activesupport (3.2.19)
+      i18n (~> 0.6, >= 0.6.4)
+      multi_json (~> 1.0)
+    clamp (0.6.3)
+    cocoapods-testing (0.0.3)
+      xctasks
+    colored (1.2)
+    i18n (0.6.11)
+    mini_portile (0.6.0)
+    multi_json (1.10.1)
+    nokogiri (1.6.3.1)
+      mini_portile (= 0.6.0)
+    rake (10.3.2)
+    slather (1.2.1)
+      clamp (~> 0.6)
+      xcodeproj (~> 0.17)
+    xcodeproj (0.19.1)
+      CFPropertyList (~> 2.2)
+      activesupport (~> 3.0)
+      colored (~> 1.2)
+    xctasks (0.4.1)
+      nokogiri (~> 1.6, >= 1.6.3.1)
+      rake (~> 10.0, >= 10.0.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.3)
+  cocoapods-coverage!
+  rake

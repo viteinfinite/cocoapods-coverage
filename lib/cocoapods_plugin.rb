@@ -1,1 +1,1 @@
-require 'pod/command/spec/coverage'
+require 'pod/command/lib/coverage'
