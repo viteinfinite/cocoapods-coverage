@@ -8,11 +8,11 @@ Gem::Specification.new do |spec|
   spec.version       = CocoapodsCoverage::VERSION
   spec.authors       = ['Boris Bügling']
   spec.email         = ['boris@bügling.com']
-  spec.summary       = %q{Generate code coverage statistics for Pods.}
+  spec.summary       = 'Generate code coverage statistics for Pods.'
   spec.homepage      = 'https://github.com/viteinfinite/cocoapods-coverage'
   spec.license       = 'MIT'
 
-  spec.files         = `git ls-files`.split($/)
+  spec.files         = `git ls-files`.split($INPUT_RECORD_SEPARATOR)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']

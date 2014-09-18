@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cocoapods-coverage (0.0.2)
+    cocoapods-coverage (0.0.3)
       cocoapods-testing (>= 0.0.4)
       slather
 
