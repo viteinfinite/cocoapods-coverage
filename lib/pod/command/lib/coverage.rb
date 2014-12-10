@@ -37,6 +37,9 @@ module Pod
           end
 
           project.post
+
+          project.coverage_service = :gutter_json
+          project.post
         end
 
         def test_with_coverage
