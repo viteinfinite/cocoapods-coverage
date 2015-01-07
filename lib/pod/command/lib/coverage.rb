@@ -28,6 +28,7 @@ module Pod
         end
 
         def slather(project_path)
+          return if not File.directory?(project_path)
           project = Slather::Project.open(project_path)
 
           if ENV['TRAVIS'] == 'true'
