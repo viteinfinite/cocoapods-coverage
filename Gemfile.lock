@@ -3,7 +3,7 @@ PATH
   specs:
     cocoapods-coverage (0.0.5)
       cocoapods-testing (>= 0.0.4)
-      slather
+      slather (>= 1.6.0)
 
 GEM
   remote: https://rubygems.org/
@@ -14,25 +14,25 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    clamp (0.6.3)
+    clamp (0.6.4)
     cocoapods-testing (0.0.6)
       xctasks
     colored (1.2)
     i18n (0.7.0)
-    json (1.8.1)
+    json (1.8.2)
     mini_portile (0.6.0)
-    minitest (5.5.0)
+    minitest (5.5.1)
     nokogiri (1.6.3.1)
       mini_portile (= 0.6.0)
     rake (10.3.2)
-    slather (1.5.3)
+    slather (1.6.0)
       clamp (~> 0.6)
       nokogiri (~> 1.6.3)
-      xcodeproj (~> 0.20.0)
+      xcodeproj (~> 0.23.0)
     thread_safe (0.3.4)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    xcodeproj (0.20.2)
+    xcodeproj (0.23.0)
       activesupport (>= 3)
       colored (~> 1.2)
     xctasks (0.4.1)
