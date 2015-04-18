@@ -22,7 +22,8 @@ module Pod
             workspace.file_references.each do |file_ref|
               next unless file_ref.path.end_with? '.xcodeproj'
               next if file_ref.path == 'Pods/Pods.xcodeproj'
-              slather(file_ref.path)
+              ref_path = File.absolute_path(file_ref.path, Pathname.new(_path).dirname)
+              slather(ref_path)
             end
           end
         end
@@ -37,10 +38,13 @@ module Pod
             project.coverage_service = :terminal
           end
 
-          project.post
+          begin
+            project.post
 
-          project.coverage_service = :gutter_json
-          project.post
+            project.coverage_service = :gutter_json
+            project.post
+          rescue
+          end
         end
 
         def test_with_coverage
